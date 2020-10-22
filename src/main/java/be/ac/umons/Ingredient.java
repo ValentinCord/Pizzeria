@@ -1,5 +1,5 @@
 package be.ac.umons;
-
+// slaut je teste si ca marche
 import java.math.BigDecimal;
 
 public class Ingredient {
