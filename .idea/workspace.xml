@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1611d814-7787-4db3-a4ef-98e7835496ff" name="Default Changelist" comment="" />
+    <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="initialisation du projet et du repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/PizzaComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Ingredient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,8 +52,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1jF5u1IzxZgVdQgTgMlKUVhiyMn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1jHfxJexxky7DA9JSZFLTS4NuPh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,29 +65,74 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.ac.umons.App" />
+      <module name="DistributeurDePizzas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.ac.umons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1611d814-7787-4db3-a4ef-98e7835496ff" name="Default Changelist" comment="" />
-      <created>1603387219787</created>
+      <changelist id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="initialisation du projet et du repository" />
+      <created>1603466185141</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603387219787</updated>
-      <workItem from="1603387222662" duration="93000" />
+      <updated>1603466185141</updated>
+      <workItem from="1603466186713" duration="1995000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="500" height="445" key="SwitcherDM" timestamp="1603387312299">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1603471815705">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1603387312299" />
-    <state x="431" y="296" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603387278682">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603471815705" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603471002377">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1603387278682" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603471002377" />
   </component>
 </project>

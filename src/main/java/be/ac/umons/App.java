@@ -22,16 +22,19 @@ public class App
 
     public static void main( String[] args )
     {
+        String name ;
+        BigDecimal price;
         Map<String, Ingredient> ingredients = new HashMap<>();
 
         try {
 
             //DBSingleton db = DBSingleton.getSingleton("jdbc://localhost:3306/mysql", "username", "password");
-            DBSingleton db = DBSingleton.getSingleton();
+            DBSingleton db = DBSingleton.getSingleton("http://localhost/phpmyadmin", "root", "");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
 
             while (rs.next()) {
+
                 Ingredient ingredient = new Ingredient();
                 ingredient.setName(rs.getString("name"));
                 ingredient.setPrice(rs.getBigDecimal("price"));
