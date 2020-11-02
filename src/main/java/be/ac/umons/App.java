@@ -38,12 +38,6 @@ public class App
                     Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(cheese.getName(), cheese);
                 }
-                // A chaque nouvelle ligne, on cree un ingredient avec ses propres caract.
-                // Ingredient ingredient = new Ingredient();
-                //ingredient.setName(rs.getString("name"));
-                //ingredient.setPrice(rs.getBigDecimal("price"));
-                // ingredient.setStock(rs.getInteger("stock"));
-                //ingredients.put(ingredient.getName(), ingredient);
 
             }
             rs.close();
@@ -59,13 +53,6 @@ public class App
         }
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
-
-        Pizza prosciutto = new Pizza("Proscuitto");
-        prosciutto.addIngredient(ingredients.get("Dough"));
-        prosciutto.addIngredient(ingredients.get("Tomato Sauce"));
-        prosciutto.addIngredient(ingredients.get("Cheese"));
-        prosciutto.addIngredient(ingredients.get("Ham"));
-        // System.out.println(prosciutto.toString());
 
         /*
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {

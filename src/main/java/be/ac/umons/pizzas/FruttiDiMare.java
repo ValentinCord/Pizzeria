@@ -11,8 +11,8 @@ public class FruttiDiMare extends Pizza {
     Cheese cheese = new Cheese ("Cheese", BigDecimal.valueOf(2));
     Seafood seafood = new Seafood("Seafood", BigDecimal.valueOf(2));
 
-    public FruttiDiMare(String name) {
-        super(name);
+    public FruttiDiMare(String name, BigDecimal price) {
+        super(name,price);
         addIngredient(dough);
         addIngredient(tomatoSauce);
         addIngredient(cheese);

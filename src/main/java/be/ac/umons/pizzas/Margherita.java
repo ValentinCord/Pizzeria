@@ -12,8 +12,8 @@ public class Margherita extends Pizza {
     TomatoSauce tomatoSauce = new TomatoSauce("TomatoSauce", BigDecimal.valueOf(1.5));
     Cheese cheese = new Cheese ("Cheese", BigDecimal.valueOf(2));
 
-    public Margherita(String name) {
-        super(name);
+    public Margherita(String name, BigDecimal price) {
+        super(name, price);
         addIngredient(dough);
         addIngredient(tomatoSauce);
         addIngredient(cheese);

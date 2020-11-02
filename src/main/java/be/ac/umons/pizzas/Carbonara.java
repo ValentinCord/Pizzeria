@@ -11,8 +11,8 @@ public class Carbonara extends Pizza {
     Cheese cheese = new Cheese ("Cheese", BigDecimal.valueOf(2));
     Ham ham = new Ham("Ham", BigDecimal.valueOf(2));
 
-    public Carbonara(String name) {
-        super(name);
+    public Carbonara(String name, BigDecimal price) {
+        super(name,price);
         addIngredient(dough);
         addIngredient(whiteCream);
         addIngredient(cheese);

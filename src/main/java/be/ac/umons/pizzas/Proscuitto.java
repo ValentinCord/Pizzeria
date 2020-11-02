@@ -14,8 +14,8 @@ public class Proscuitto extends Pizza {
     Cheese cheese = new Cheese ("Cheese", BigDecimal.valueOf(2));
     Ham ham = new Ham("Ham", BigDecimal.valueOf(2));
 
-    public Proscuitto(String name) {
-        super(name);
+    public Proscuitto(String name, BigDecimal price) {
+        super(name,price);
         addIngredient(dough);
         addIngredient(tomatoSauce);
         addIngredient(cheese);
