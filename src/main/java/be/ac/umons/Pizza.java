@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Pizza extends Ingredient implements PizzaComponent {
     private String name;
     private BigDecimal price = BigDecimal.valueOf(0);
-    private ArrayList<Ingredient> listIngredients;
+    public ArrayList<Ingredient> listIngredients = new ArrayList<Ingredient>();
 
     public Pizza(String name){
         this.name = name;

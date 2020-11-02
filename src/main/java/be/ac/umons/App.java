@@ -33,6 +33,7 @@ public class App
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
             while (rs.next()) {
+
                 // A chaque nouvelle ligne, on cree un ingredient avec ses propres caract.
                 Ingredient ingredient = new Ingredient();
                 ingredient.setName(rs.getString("name"));
@@ -53,12 +54,21 @@ public class App
             System.out.print(AnsiColor.RESET);
         }
 
+        ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
+
+        Pizza prosciutto = new Pizza("Proscuitto");
+        prosciutto.addIngredient(ingredients.get("Dough"));
+        prosciutto.addIngredient(ingredients.get("Tomato Sauce"));
+        prosciutto.addIngredient(ingredients.get("Cheese"));
+        prosciutto.addIngredient(ingredients.get("Ham"));
+        // System.out.println(prosciutto.toString());
+
         /*
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
             System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
         }*/
 
-        ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
+
 
     }
 
