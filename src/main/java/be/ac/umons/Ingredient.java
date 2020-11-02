@@ -8,7 +8,9 @@ public class Ingredient implements PizzaComponent {
     private BigDecimal price;
     // private ObserverCollection;
 
-    public Ingredient() {
+    public Ingredient(String name, BigDecimal price) {
+        this.name = name;
+        this.price = price;
     }
     @Override
     public String getName() {

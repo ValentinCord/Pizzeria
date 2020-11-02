@@ -3,12 +3,13 @@ package be.ac.umons;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-public class Pizza extends Ingredient implements PizzaComponent {
+public abstract class Pizza extends Ingredient implements PizzaComponent {
     private String name;
     private BigDecimal price = BigDecimal.valueOf(0);
     public ArrayList<Ingredient> listIngredients = new ArrayList<Ingredient>();
 
     public Pizza(String name){
+        super();
         this.name = name;
     }
     @Override
@@ -42,4 +43,6 @@ public class Pizza extends Ingredient implements PizzaComponent {
                 ", listIngredients=" + listIngredients +
                 '}';
     }
+
+    public abstract Pizza type(Pizza pizza);
 }

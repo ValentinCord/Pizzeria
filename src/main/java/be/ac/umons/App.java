@@ -1,6 +1,7 @@
 package be.ac.umons;
 
 import be.ac.umons.database.DBSingleton;
+import be.ac.umons.ingredients.Cheese;
 import be.ac.umons.util.AnsiColor;
 import be.ac.umons.util.ColorPrint;
 
@@ -33,13 +34,16 @@ public class App
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
             while (rs.next()) {
-
+                if (rs.getString("name").compareTo("Cheese") == 0){
+                    Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(cheese.getName(), cheese);
+                }
                 // A chaque nouvelle ligne, on cree un ingredient avec ses propres caract.
-                Ingredient ingredient = new Ingredient();
-                ingredient.setName(rs.getString("name"));
-                ingredient.setPrice(rs.getBigDecimal("price"));
+                // Ingredient ingredient = new Ingredient();
+                //ingredient.setName(rs.getString("name"));
+                //ingredient.setPrice(rs.getBigDecimal("price"));
                 // ingredient.setStock(rs.getInteger("stock"));
-                ingredients.put(ingredient.getName(), ingredient);
+                //ingredients.put(ingredient.getName(), ingredient);
 
             }
             rs.close();
