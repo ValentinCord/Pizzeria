@@ -18,3 +18,8 @@ VALUES
 ('Sea food', 2),
 ('Ham', 2),
 ('Olive', 1);
+
+ALTER TABLE ingredients
+    ADD stock INTEGER NOT NULL DEFAULT 0;
+
+UPDATE ingredients SET stock = 5;

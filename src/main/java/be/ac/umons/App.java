@@ -31,13 +31,15 @@ public class App
             DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:3306/tp6_db_java", "root", "");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
-
+            // Lecture ligne par ligne de la DB
             while (rs.next()) {
-
+                // A chaque nouvelle ligne, on cree un ingredient avec ses propres caract.
                 Ingredient ingredient = new Ingredient();
                 ingredient.setName(rs.getString("name"));
                 ingredient.setPrice(rs.getBigDecimal("price"));
-                ingredients.put(ingredient.getName(), ingredient); // Remplissage de la map
+                // ingredient.setStock(rs.getInteger("stock"));
+                ingredients.put(ingredient.getName(), ingredient);
+
             }
             rs.close();
 
