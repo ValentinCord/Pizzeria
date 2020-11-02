@@ -28,8 +28,7 @@ public class App
 
         try {
 
-            //DBSingleton db = DBSingleton.getSingleton("jdbc://localhost:3306/mysql", "username", "password");
-            DBSingleton db = DBSingleton.getSingleton("http://localhost/phpmyadmin", "root", "");
+            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:3306/tp6_db_java", "root", "");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
 
@@ -38,8 +37,7 @@ public class App
                 Ingredient ingredient = new Ingredient();
                 ingredient.setName(rs.getString("name"));
                 ingredient.setPrice(rs.getBigDecimal("price"));
-
-                ingredients.put(ingredient.getName(), ingredient);
+                ingredients.put(ingredient.getName(), ingredient); // Remplissage de la map
             }
             rs.close();
 
@@ -59,6 +57,7 @@ public class App
         }*/
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
+
     }
 
     /**

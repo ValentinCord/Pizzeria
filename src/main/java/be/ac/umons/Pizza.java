@@ -3,12 +3,12 @@ package be.ac.umons;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-public class Pizza implements PizzaComponent{
+public class Pizza extends Ingredient implements PizzaComponent {
     private String name;
-    private BigDecimal price = BigDecimal.valueOf(0); // Pcq sinon 0 il croit que c est un int
+    private BigDecimal price = BigDecimal.valueOf(0);
     private ArrayList<Ingredient> listIngredients;
 
-    Pizza(String name){
+    public Pizza(String name){
         this.name = name;
     }
     @Override
