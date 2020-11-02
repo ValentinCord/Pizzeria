@@ -1,7 +1,7 @@
 package be.ac.umons;
 
 import be.ac.umons.database.DBSingleton;
-import be.ac.umons.ingredients.Cheese;
+import be.ac.umons.ingredients.*;
 import be.ac.umons.util.AnsiColor;
 import be.ac.umons.util.ColorPrint;
 
@@ -10,6 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,6 +28,8 @@ public class App
         String name ;
         BigDecimal price;
         Map<String, Ingredient> ingredients = new HashMap<>();
+        ArrayList<String> listingredient = new ArrayList<String>(
+                Arrays.asList("Cheese","Dough","Ham", "Mushroom", "Olive", "Seafood", "TomatoSauce", "WhiteCream"));
 
         try {
 
@@ -34,9 +38,48 @@ public class App
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
             while (rs.next()) {
+                /*for (String ingredient : listingredient) {
+                    if (rs.getString("name").compareTo(ingredient) == 0){
+                        Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
+                        ingredients.put(cheese.getName(), cheese);
+                    }
+                }*/
+                if (rs.getString("name").compareTo(String.valueOf(listingredient)) == 0){
+                    Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(cheese.getName(), cheese);
+                }
+
                 if (rs.getString("name").compareTo("Cheese") == 0){
                     Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(cheese.getName(), cheese);
+                }
+                else if (rs.getString("name").compareTo("Dough") == 0){
+                    Ingredient dough = new Dough(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(dough.getName(), dough);
+                }
+                else if (rs.getString("name").compareTo("Ham") == 0){
+                    Ingredient ham = new Ham(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(ham.getName(), ham);
+                }
+                else if (rs.getString("name").compareTo("Mushroom") == 0){
+                    Ingredient mushroom = new Mushroom(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(mushroom.getName(), mushroom);
+                }
+                else if (rs.getString("name").compareTo("Olive") == 0){
+                    Ingredient olive = new Olive(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(olive.getName(), olive);
+                }
+                else if (rs.getString("name").compareTo("Seafood") == 0){
+                    Ingredient seafood = new Seafood(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(seafood.getName(), seafood);
+                }
+                else if (rs.getString("name").compareTo("TomatoSauce") == 0){
+                    Ingredient tomatoSauce = new TomatoSauce(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(tomatoSauce.getName(), tomatoSauce);
+                }
+                else if (rs.getString("name").compareTo("WhiteCream") == 0){
+                    Ingredient whiteCream = new WhiteCream(rs.getString("name"), rs.getBigDecimal("price"));
+                    ingredients.put(whiteCream.getName(), whiteCream);
                 }
 
             }
