@@ -85,7 +85,7 @@ public class App
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
 
-        /*
+        /* meme chose que le for each audessus
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
             System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
         }*/

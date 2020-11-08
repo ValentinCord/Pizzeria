@@ -22,9 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="partie2_probleme pizza abstract">
+    <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="lecture db finale">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Decoration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/Dominos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/Dominos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/PizzaHut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/PizzaHut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +112,7 @@
       <workItem from="1603466186713" duration="2647000" />
       <workItem from="1604319301524" duration="26474000" />
       <workItem from="1604427821864" duration="1884000" />
-      <workItem from="1604858415040" duration="1121000" />
+      <workItem from="1604858415040" duration="3679000" />
     </task>
     <task id="LOCAL-00001" summary="class pizza, class ingredient et interface pizzaImplement&#10;j ai fait un override sur toute les fonction qui sont implements de l'interface&#10;le constructeur d'ingredient est vide pcq dans le main, a chaque fois qu il cree un ingredient en le lisant dans la DB, il fait un setname, setprice donc je suppose pas besoin de les mettre dans le constructeur">
       <created>1603473244821</created>
@@ -167,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604859119197</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lecture db finale">
+      <created>1604859824371</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604859824371</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +205,8 @@
     <MESSAGE value="premierTp_Partie5 fin abstract factory" />
     <MESSAGE value="premierTp_Partie6 amelioration du main" />
     <MESSAGE value="partie2_probleme pizza abstract" />
-    <option name="LAST_COMMIT_MESSAGE" value="partie2_probleme pizza abstract" />
+    <MESSAGE value="lecture db finale" />
+    <option name="LAST_COMMIT_MESSAGE" value="lecture db finale" />
   </component>
   <component name="WindowStateProjectService">
     <state x="244" y="58" width="814" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604429160457">
@@ -220,30 +231,30 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604328997301" />
-    <state width="1493" height="93" key="GridCell.Tab.0.bottom" timestamp="1604859494122">
+    <state width="1493" height="169" key="GridCell.Tab.0.bottom" timestamp="1604860850041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="93" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604859494122" />
-    <state width="1493" height="93" key="GridCell.Tab.0.center" timestamp="1604859494121">
+    <state width="1493" height="169" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604860850041" />
+    <state width="1493" height="169" key="GridCell.Tab.0.center" timestamp="1604860850040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="93" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604859494121" />
-    <state width="1493" height="93" key="GridCell.Tab.0.left" timestamp="1604859494121">
+    <state width="1493" height="169" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604860850040" />
+    <state width="1493" height="169" key="GridCell.Tab.0.left" timestamp="1604860850040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="93" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604859494121" />
-    <state width="1493" height="93" key="GridCell.Tab.0.right" timestamp="1604859494121">
+    <state width="1493" height="169" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604860850040" />
+    <state width="1493" height="169" key="GridCell.Tab.0.right" timestamp="1604860850040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="93" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604859494121" />
+    <state width="1493" height="169" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604860850040" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604386966866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -269,17 +280,17 @@
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604325262785" />
     <state width="189" height="363" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1604429170434" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604859124631">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604859828388">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604345820861" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604859124631" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604386933686">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604859828388" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604862723526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386933686" />
     <state x="2653" y="411" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604335025227" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604351031900" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604862723526" />
     <state x="2723" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1604345744976">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
