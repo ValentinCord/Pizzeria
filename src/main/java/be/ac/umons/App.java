@@ -28,8 +28,6 @@ public class App
         String name ;
         BigDecimal price;
         Map<String, Ingredient> ingredients = new HashMap<>();
-        ArrayList<String> listingredient = new ArrayList<String>(
-                Arrays.asList("Cheese","Dough","Ham", "Mushroom", "Olive", "Seafood", "TomatoSauce", "WhiteCream"));
 
         try {
 
@@ -37,17 +35,7 @@ public class App
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
-            while (rs.next()) {
-                /*for (String ingredient : listingredient) {
-                    if (rs.getString("name").compareTo(ingredient) == 0){
-                        Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
-                        ingredients.put(cheese.getName(), cheese);
-                    }
-                }*/
-                if (rs.getString("name").compareTo(String.valueOf(listingredient)) == 0){
-                    Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(cheese.getName(), cheese);
-                }
+            while (rs.next()){
 
                 if (rs.getString("name").compareTo("Cheese") == 0){
                     Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
@@ -69,15 +57,15 @@ public class App
                     Ingredient olive = new Olive(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(olive.getName(), olive);
                 }
-                else if (rs.getString("name").compareTo("Seafood") == 0){
+                else if (rs.getString("name").compareTo("Sea food") == 0){
                     Ingredient seafood = new Seafood(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(seafood.getName(), seafood);
                 }
-                else if (rs.getString("name").compareTo("TomatoSauce") == 0){
+                else if (rs.getString("name").compareTo("Tomato Sauce") == 0){
                     Ingredient tomatoSauce = new TomatoSauce(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(tomatoSauce.getName(), tomatoSauce);
                 }
-                else if (rs.getString("name").compareTo("WhiteCream") == 0){
+                else if (rs.getString("name").compareTo("White Cream") == 0){
                     Ingredient whiteCream = new WhiteCream(rs.getString("name"), rs.getBigDecimal("price"));
                     ingredients.put(whiteCream.getName(), whiteCream);
                 }
