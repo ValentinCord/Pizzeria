@@ -23,6 +23,7 @@ public class Pizza extends Ingredient implements PizzaComponent {
     public void setName(String name){
         this.name = name;
     }
+
     @Override
     public void setPrice(BigDecimal price){
         this.price = price;

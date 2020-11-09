@@ -1,17 +1,19 @@
 package be.ac.umons;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Observer;
 
 public class Ingredient implements PizzaComponent {
     private String name;
     private BigDecimal price;
-    // private ObserverCollection;
+    public List<Observer> observers;
 
     public Ingredient(String name, BigDecimal price) {
         this.name = name;
         this.price = price;
     }
+
     @Override
     public String getName() {
         return name;
@@ -35,13 +37,26 @@ public class Ingredient implements PizzaComponent {
                 ", price=" + price +
                 '}';
     }
-    public void registerObserver(Observer o){
+    public void register(Observer obs){
+        if (obs == null){
+            throw new NullPointerException(("This osb is null"));
+        }
 
+        if (!observers.contains(obs)){
+            observers.add(obs);
+        }
     }
-    public void unregisterObserver(Observer o){
+    public void unregister(Observer obs){
+        if (obs == null){
+            throw new NullPointerException(("This observer is null"));
+        }
 
+        if (!observers.contains(obs)){
+            observers.remove(obs);
+        }
     }
-    public void notifyObserver(){
+
+    public void notify(List<Observer> observers){
 
     }
 

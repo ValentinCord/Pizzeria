@@ -1,5 +1,13 @@
 package be.ac.umons.state;
 
 public class Context {
-    // definir toute les variables utiles dans les differents états
+    private State state;
+
+    public Context() {
+        this.state = new Attente();
+    }
+    public void setState(State newState){
+        this.state = newState;
+    }
+
 }

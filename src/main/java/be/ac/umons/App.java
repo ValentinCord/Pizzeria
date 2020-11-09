@@ -2,6 +2,7 @@ package be.ac.umons;
 
 import be.ac.umons.database.DBSingleton;
 import be.ac.umons.ingredients.*;
+import be.ac.umons.pizzas.Margherita;
 import be.ac.umons.util.AnsiColor;
 import be.ac.umons.util.ColorPrint;
 
@@ -10,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.time.chrono.MinguoEra;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -27,7 +29,10 @@ public class App
     {
         String name ;
         BigDecimal price;
+        int stock;
+        //Technicien obs = new Technicien();
         Map<String, Ingredient> ingredients = new HashMap<>();
+        Map<String, Integer> stocks = new HashMap<>();
 
         try {
 
@@ -35,41 +40,15 @@ public class App
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
-            while (rs.next()){
+            while (rs.next()) {
+                Ingredient ingredient = new Ingredient(rs.getString("name"), rs.getBigDecimal("price"));
+                ingredients.put(ingredient.getName(), ingredient);
 
-                if (rs.getString("name").compareTo("Cheese") == 0){
-                    Ingredient cheese = new Cheese(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(cheese.getName(), cheese);
-                }
-                else if (rs.getString("name").compareTo("Dough") == 0){
-                    Ingredient dough = new Dough(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(dough.getName(), dough);
-                }
-                else if (rs.getString("name").compareTo("Ham") == 0){
-                    Ingredient ham = new Ham(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(ham.getName(), ham);
-                }
-                else if (rs.getString("name").compareTo("Mushroom") == 0){
-                    Ingredient mushroom = new Mushroom(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(mushroom.getName(), mushroom);
-                }
-                else if (rs.getString("name").compareTo("Olive") == 0){
-                    Ingredient olive = new Olive(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(olive.getName(), olive);
-                }
-                else if (rs.getString("name").compareTo("Sea food") == 0){
-                    Ingredient seafood = new Seafood(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(seafood.getName(), seafood);
-                }
-                else if (rs.getString("name").compareTo("Tomato Sauce") == 0){
-                    Ingredient tomatoSauce = new TomatoSauce(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(tomatoSauce.getName(), tomatoSauce);
-                }
-                else if (rs.getString("name").compareTo("White Cream") == 0){
-                    Ingredient whiteCream = new WhiteCream(rs.getString("name"), rs.getBigDecimal("price"));
-                    ingredients.put(whiteCream.getName(), whiteCream);
-                }
+                //ingredient.register(obs);
+                //obs.setSubject(ingredient);
 
+                stock = rs.getInt("stock");
+                stocks.put(ingredient.getName(), stock);
             }
             rs.close();
 
@@ -84,8 +63,12 @@ public class App
         }
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
+        stocks.forEach((k, v) -> System.out.println(k + " : " + v));
 
-        /* meme chose que le for each audessus
+        Margherita margherita = new Pizza();
+        Margherita margherita = new Margherita("margherite", BigDecimal.valueOf(10));
+
+        /*System.out.println("\n");
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
             System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
         }*/

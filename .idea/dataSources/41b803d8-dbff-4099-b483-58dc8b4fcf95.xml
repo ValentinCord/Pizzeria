@@ -7,18 +7,18 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
-    <schema id="2" parent="1" name="dbprojet">
+    <schema id="2" parent="1" name="information_schema">
       <Current>1</Current>
-      <Collation>latin1_swedish_ci</Collation>
-    </schema>
-    <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="4" parent="1" name="mysql">
+    <schema id="3" parent="1" name="mysql">
       <Collation>latin1_swedish_ci</Collation>
     </schema>
-    <schema id="5" parent="1" name="performance_schema">
+    <schema id="4" parent="1" name="performance_schema">
       <Collation>utf8_general_ci</Collation>
+    </schema>
+    <schema id="5" parent="1" name="prescilia">
+      <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="sys">
       <Collation>utf8_general_ci</Collation>
@@ -768,7 +768,13 @@ SELECT|sys.sys_config:null
       <DataType>decimal(13,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="238" parent="235" name="PRIMARY">
+    <column id="238" parent="235" name="stock">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="239" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
       <Primary>1</Primary>
