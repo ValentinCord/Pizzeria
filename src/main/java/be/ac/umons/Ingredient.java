@@ -7,11 +7,15 @@ import java.util.Observer;
 public class Ingredient implements PizzaComponent {
     private String name;
     private BigDecimal price;
+    int stock;
     public List<Observer> observers;
 
-    public Ingredient(String name, BigDecimal price) {
-        this.name = name;
-        this.price = price;
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     @Override
@@ -35,6 +39,7 @@ public class Ingredient implements PizzaComponent {
         return "Ingredient{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
+                ", stock=" + stock +
                 '}';
     }
     public void register(Observer obs){

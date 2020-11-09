@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class ChoixPizzaHut extends ChoixPizza {
 
-    Olive olive = new Olive("Olive", BigDecimal.valueOf(1));
+    Olive olive = new Olive();
 
     public Pizza type(Pizza pizza){
         pizza.addIngredient(olive);

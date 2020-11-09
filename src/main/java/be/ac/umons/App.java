@@ -31,8 +31,9 @@ public class App
         BigDecimal price;
         int stock;
         //Technicien obs = new Technicien();
+
+        BigDecimal prixPizza = BigDecimal.valueOf(0);
         Map<String, Ingredient> ingredients = new HashMap<>();
-        Map<String, Integer> stocks = new HashMap<>();
 
         try {
 
@@ -41,14 +42,15 @@ public class App
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
             while (rs.next()) {
-                Ingredient ingredient = new Ingredient(rs.getString("name"), rs.getBigDecimal("price"));
+                Ingredient ingredient = new Ingredient();
+                ingredient.setName(rs.getString("name"));
+                ingredient.setPrice(rs.getBigDecimal("price"));
+                ingredient.setStock(rs.getInt("stock"));
                 ingredients.put(ingredient.getName(), ingredient);
 
                 //ingredient.register(obs);
                 //obs.setSubject(ingredient);
 
-                stock = rs.getInt("stock");
-                stocks.put(ingredient.getName(), stock);
             }
             rs.close();
 
@@ -62,18 +64,17 @@ public class App
             System.out.print(AnsiColor.RESET);
         }
 
-        ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
-        stocks.forEach((k, v) -> System.out.println(k + " : " + v));
+        ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €, " + v.getStock() + " disponible(s) "));
 
-        Margherita margherita = new Pizza();
-        Margherita margherita = new Margherita("margherite", BigDecimal.valueOf(10));
 
         /*System.out.println("\n");
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
             System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
         }*/
 
-
+        Margherita margherita = new Margherita();
+        margherita.getListIngredient().forEach((i) -> prixPizza.add(i.getPrice()));
+        System.out.println(prixPizza);
 
     }
 

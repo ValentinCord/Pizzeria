@@ -22,31 +22,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="VERSION AVEC SOUS CLASSE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Technicien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/observer/NewChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/observer/Viewers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41b803d8-dbff-4099-b483-58dc8b4fcf95.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41b803d8-dbff-4099-b483-58dc8b4fcf95.xml" afterDir="false" />
+    <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="VERSION BIZARE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Ingredient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaHut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaHut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Cheese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Dough.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Dough.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Ham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Ham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Mushroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Mushroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Olive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Olive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Seafood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/Seafood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/TomatoSauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/TomatoSauce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/WhiteCream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/ingredients/WhiteCream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Carbonara.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Carbonara.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/FruttiDiMare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/FruttiDiMare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Margherita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Margherita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Attente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Attente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Fabrication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Fabrication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Manque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Manque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Panne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/Panne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/state/state.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Proscuitto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Proscuitto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/Ingredient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/Ingredient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/Pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/Pizza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/Dominos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/Dominos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/PizzaHut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/PizzaHut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaHut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaHut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Cheese.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Cheese.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Dough.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Dough.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Ham.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Ham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Mushroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Mushroom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Olive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Olive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Seafood.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/Seafood.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/TomatoSauce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/TomatoSauce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/WhiteCream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/ingredients/WhiteCream.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Carbonara.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Carbonara.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/FruttiDiMare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/FruttiDiMare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Margherita.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Margherita.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Proscuitto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Proscuitto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +139,7 @@
       <workItem from="1603466186713" duration="2647000" />
       <workItem from="1604319301524" duration="26474000" />
       <workItem from="1604427821864" duration="1884000" />
-      <workItem from="1604858415040" duration="16007000" />
+      <workItem from="1604858415040" duration="18186000" />
     </task>
     <task id="LOCAL-00001" summary="class pizza, class ingredient et interface pizzaImplement&#10;j ai fait un override sur toute les fonction qui sont implements de l'interface&#10;le constructeur d'ingredient est vide pcq dans le main, a chaque fois qu il cree un ingredient en le lisant dans la DB, il fait un setname, setprice donc je suppose pas besoin de les mettre dans le constructeur">
       <created>1603473244821</created>
@@ -209,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604926696141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="VERSION BIZARE">
+      <created>1604935660090</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604935660090</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +256,8 @@
     <MESSAGE value="lecture db finale" />
     <MESSAGE value="question 5 et 6" />
     <MESSAGE value="VERSION AVEC SOUS CLASSE" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION AVEC SOUS CLASSE" />
+    <MESSAGE value="VERSION BIZARE" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION BIZARE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="244" y="58" width="814" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604429160457">
@@ -248,11 +265,11 @@
     </state>
     <state x="2327" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604326486593" />
     <state x="244" y="58" width="814" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604429160457" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604934881266">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1604936615026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2638" y="150" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604341511165" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604934881266" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604936615026" />
     <state x="375" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604386960895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -273,30 +290,30 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604328997301" />
-    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1604934987471">
+    <state width="1493" height="246" key="GridCell.Tab.0.bottom" timestamp="1604937442689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1604934987471">
+    <state width="1493" height="246" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604937442689" />
+    <state width="1493" height="246" key="GridCell.Tab.0.center" timestamp="1604937442688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1604934987471">
+    <state width="1493" height="246" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604937442688" />
+    <state width="1493" height="246" key="GridCell.Tab.0.left" timestamp="1604937442688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1604934987471">
+    <state width="1493" height="246" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604937442688" />
+    <state width="1493" height="246" key="GridCell.Tab.0.right" timestamp="1604937442689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
-    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
+    <state width="1493" height="246" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604937442689" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604386966866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -322,11 +339,11 @@
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604325262785" />
     <state width="189" height="363" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1604429170434" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604926700579">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604935666887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604345820861" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604926700579" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604935666887" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604862723526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

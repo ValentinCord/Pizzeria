@@ -5,7 +5,5 @@ import be.ac.umons.Ingredient;
 import java.math.BigDecimal;
 
 public class Ham extends Ingredient {
-    public Ham(String name, BigDecimal price) {
-        super(name, price);
-    }
+
 }

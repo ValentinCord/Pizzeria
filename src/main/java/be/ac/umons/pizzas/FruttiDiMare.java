@@ -6,16 +6,12 @@ import be.ac.umons.ingredients.*;
 import java.math.BigDecimal;
 
 public class FruttiDiMare extends Pizza {
-    Dough dough = new Dough("Dough", BigDecimal.valueOf(3));
-    TomatoSauce tomatoSauce = new TomatoSauce("TomatoSauce", BigDecimal.valueOf(1.5));
-    Cheese cheese = new Cheese ("Cheese", BigDecimal.valueOf(2));
-    Seafood seafood = new Seafood("Seafood", BigDecimal.valueOf(2));
 
-    public FruttiDiMare(String name, BigDecimal price) {
-        super(name,price);
-        addIngredient(dough);
-        addIngredient(tomatoSauce);
-        addIngredient(cheese);
-        addIngredient(seafood);
+    public FruttiDiMare() {
+
+        addIngredient(new Dough());
+        addIngredient(new TomatoSauce());
+        addIngredient(new Cheese());
+        addIngredient(new Seafood());
     }
 }
