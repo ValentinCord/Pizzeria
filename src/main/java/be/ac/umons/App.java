@@ -2,7 +2,10 @@ package be.ac.umons;
 
 import be.ac.umons.database.DBSingleton;
 import be.ac.umons.ingredients.*;
+import be.ac.umons.pizzas.Carbonara;
+import be.ac.umons.pizzas.FruttiDiMare;
 import be.ac.umons.pizzas.Margherita;
+import be.ac.umons.pizzas.Proscuitto;
 import be.ac.umons.util.AnsiColor;
 import be.ac.umons.util.ColorPrint;
 
@@ -32,12 +35,12 @@ public class App
         int stock;
         //Technicien obs = new Technicien();
 
-        BigDecimal prixPizza = BigDecimal.valueOf(0);
+        BigDecimal prixPizza = BigDecimal.ZERO;
         Map<String, Ingredient> ingredients = new HashMap<>();
 
         try {
 
-            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:3306/tp6_db_java", "root", "");
+            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:8889/tp6_db_java", "root", "root");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
@@ -66,15 +69,43 @@ public class App
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €, " + v.getStock() + " disponible(s) "));
 
-
         /*System.out.println("\n");
         for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
             System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
         }*/
 
-        Margherita margherita = new Margherita();
-        margherita.getListIngredient().forEach((i) -> prixPizza.add(i.getPrice()));
-        System.out.println(prixPizza);
+
+        Margherita margherita = new Margherita(ingredients);
+        //margherita.getListIngredient().forEach((i) -> prixPizza.add(i.getPrice()));
+        //System.out.println(margherita.getListIngredient());
+/*
+        BigDecimal result1 = margherita.getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println("LA pizza margherita coute: " + result1);
+
+        Carbonara carbonara = new Carbonara(ingredients);
+        BigDecimal result2 = carbonara.getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println("LA pizza carbonara coute: " + result2);
+
+        FruttiDiMare fruitdemer = new FruttiDiMare(ingredients);
+        BigDecimal result3 = fruitdemer.getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println("LA pizza futtidimare coute: " + result3);
+
+        Proscuitto proscuitto = new Proscuitto(ingredients);
+        BigDecimal result4 = proscuitto.getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println("LA pizza proscuitto coute: " + result4);
+*/
 
     }
 

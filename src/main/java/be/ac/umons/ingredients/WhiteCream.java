@@ -6,4 +6,5 @@ import java.math.BigDecimal;
 
 public class WhiteCream extends Ingredient {
 
+
 }

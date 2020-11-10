@@ -10,6 +10,7 @@ public class Ingredient implements PizzaComponent {
     int stock;
     public List<Observer> observers;
 
+
     public int getStock() {
         return stock;
     }

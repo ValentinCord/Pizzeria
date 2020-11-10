@@ -8,6 +8,7 @@ public class Pizza extends Ingredient implements PizzaComponent {
     private BigDecimal price = BigDecimal.valueOf(0);
     public ArrayList<Ingredient> listIngredients = new ArrayList<>();
 
+
     @Override
     public String getName(){
         return name;
