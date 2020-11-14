@@ -1,5 +1,9 @@
 package be.ac.umons;
 
+import be.ac.umons.abstractFactory.ChoixPizza;
+import be.ac.umons.abstractFactory.Dominos;
+import be.ac.umons.abstractFactory.FabriqueAbstraite;
+import be.ac.umons.abstractFactory.PizzaHut;
 import be.ac.umons.database.DBSingleton;
 import be.ac.umons.ingredients.*;
 import be.ac.umons.pizzas.Carbonara;
@@ -69,16 +73,10 @@ public class App
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €, " + v.getStock() + " disponible(s) "));
 
-        /*System.out.println("\n");
-        for (Map.Entry<String, Ingredient> ingredientEntry : ingredients.entrySet()) {
-            System.out.println(ingredientEntry.getValue().getName() + " : " + ingredientEntry.getValue().getPrice() + " €.");
-        }*/
-
-
+        // Regard si l'on sait calculer le prix d'une pizza
         Margherita margherita = new Margherita(ingredients);
-        //margherita.getListIngredient().forEach((i) -> prixPizza.add(i.getPrice()));
-        //System.out.println(margherita.getListIngredient());
-/*
+        System.out.println(margherita.getListIngredient());
+
         BigDecimal result1 = margherita.getListIngredient()
                 .stream()
                 .map(Ingredient::getPrice)
@@ -105,7 +103,20 @@ public class App
                 .map(Ingredient::getPrice)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
         System.out.println("LA pizza proscuitto coute: " + result4);
-*/
+
+        // regarde s'il ajoute bien les olives pour les pizzahuts
+        ChoixPizza myfoodd;
+        FabriqueAbstraite fd = new Dominos();
+        myfoodd  = fd.createPizza();
+        FruttiDiMare mypizzad = new FruttiDiMare(ingredients);
+        System.out.println(myfoodd.type(mypizzad, ingredients));
+
+        ChoixPizza myfoodh;
+        FabriqueAbstraite fh = new PizzaHut();
+        myfoodh = fh.createPizza();
+        Margherita mypizzah = new Margherita(ingredients);
+        System.out.println(myfoodh.type(mypizzah, ingredients));
+
 
     }
 
