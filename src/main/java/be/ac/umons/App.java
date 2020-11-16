@@ -51,7 +51,7 @@ public class App
 
         try {
 
-            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:3306/tp6_db_java", "root", "");
+            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:8889/tp6_db_java", "root", "root");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
@@ -106,6 +106,22 @@ public class App
         Decoration pizza = new Cheesy(carbtest);
         System.out.println(carbtest.getName());
         System.out.println(carbtest.getPrice());
+
+        // Decoration + pizzahut
+        FabriqueAbstraite hut = new PizzaHut();
+        ChoixPizza Margut = hut.createPizza();
+        Margherita margheritahut = new Margherita(ingredients);
+        Margut.type(margheritahut, ingredients);
+        Decoration margdeco = new Cheesy(margheritahut);
+
+
+        //Arraylist
+        commandes.add(carbtest);
+        commandes.add(margheritahut);
+
+        System.out.println(commandes);
+
+
 
 
         //state
