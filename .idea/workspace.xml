@@ -25,17 +25,18 @@
     <list default="true" id="009a6462-6db1-48a6-a5e9-f39e3e98f0d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaHut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaHut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/ChoixPizzaNormal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/FabriqueAbstraite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/abstractFactory/FabriqueAbstraite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Carbonara.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Carbonara.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/FruttiDiMare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/FruttiDiMare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Margherita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Margherita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Proscuitto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ac/umons/pizzas/Proscuitto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/Pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/Pizza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/FabriqueAbstraite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/FabriqueAbstraite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaHut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaHut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaNormal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/ChoixPizzaNormal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/PizzaHut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/abstractFactory/PizzaHut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Margherita.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Margherita.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Carbonara.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/ac/umons/pizzas/Carbonara.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,17 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
@@ -122,7 +112,8 @@
       <workItem from="1604858415040" duration="16007000" />
       <workItem from="1604956765633" duration="4164000" />
       <workItem from="1604999481464" duration="1123000" />
-      <workItem from="1605362880665" duration="7571000" />
+      <workItem from="1605362880665" duration="8129000" />
+      <workItem from="1605529902821" duration="1565000" />
     </task>
     <task id="LOCAL-00001" summary="class pizza, class ingredient et interface pizzaImplement&#10;j ai fait un override sur toute les fonction qui sont implements de l'interface&#10;le constructeur d'ingredient est vide pcq dans le main, a chaque fois qu il cree un ingredient en le lisant dans la DB, il fait un setname, setprice donc je suppose pas besoin de les mettre dans le constructeur">
       <created>1603473244821</created>
@@ -208,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604995767413</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Verifacations de pizzahut et dominos + modification">
+      <created>1605374113267</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605374113267</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +238,8 @@
     <MESSAGE value="question 5 et 6" />
     <MESSAGE value="VERSION AVEC SOUS CLASSE" />
     <MESSAGE value="varesion stream et map dans les constructeurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="varesion stream et map dans les constructeurs" />
+    <MESSAGE value="Verifacations de pizzahut et dominos + modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verifacations de pizzahut et dominos + modification" />
   </component>
   <component name="WindowStateProjectService">
     <state x="244" y="58" width="814" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604429160457">
@@ -270,39 +269,43 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="212" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604928650872" />
-    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1604995766997">
+    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1605374112983">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1604995766997" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605374112983" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1604328997301">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604328997301" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1605373557071">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1605531403148">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605373557071" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605531403148" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.23.1920.1057@0.0.1280.800" timestamp="1605447000108" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
     <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1605373557068">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1605531403140">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605373557068" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605531403140" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/-1920.23.1920.1057@0.0.1280.800" timestamp="1605447000095" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
     <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1605373557065">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1605531403138">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605373557065" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605531403138" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/-1920.23.1920.1057@0.0.1280.800" timestamp="1605447000092" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
     <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1605373557069">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1605531403145">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605373557069" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605531403145" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/-1920.23.1920.1057@0.0.1280.800" timestamp="1605447000099" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604386966866" />
     <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604340473614" />
     <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604934987471" />
@@ -332,10 +335,10 @@
     <state width="243" height="353" key="HiddenNamespacesPopup/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1604946674733" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604325262785" />
     <state width="189" height="363" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1604429170434" />
-    <state x="301" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604995786837">
+    <state x="301" y="141" key="Vcs.Push.Dialog.v2" timestamp="1605374154685">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="301" y="141" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1604995786837" />
+    <state x="301" y="141" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1680.0.1680.1050@0.0.1280.800" timestamp="1605374154685" />
     <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604345820861" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604926700579" />
     <state x="488" y="317" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605374070906">

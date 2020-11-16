@@ -16,6 +16,8 @@ public class Margherita extends Pizza {
 
     public Margherita(Map<String, Ingredient> c) {
 
+        setName("Margherita");
+
         addIngredient(c.get("Dough"));
         c.get("Dough").setStock(c.get("Dough").getStock()-1);
         addIngredient(c.get("Tomato Sauce"));
@@ -23,10 +25,11 @@ public class Margherita extends Pizza {
         addIngredient(c.get("Cheese"));
         c.get("Cheese").setStock(c.get("Cheese").getStock()-1);
 
-        /*
-        addIngredient(new Dough());
-        addIngredient(new TomatoSauce());
-        addIngredient(new Cheese());
-         */
+        BigDecimal price = getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        setPrice(price);
+
     }
 }

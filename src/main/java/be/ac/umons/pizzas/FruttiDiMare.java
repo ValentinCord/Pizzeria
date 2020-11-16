@@ -11,17 +11,18 @@ public class FruttiDiMare extends Pizza {
 
     public FruttiDiMare(Map<String, Ingredient> c) {
 
+        setName("FruttiDiMare");
+
         addIngredient(c.get("Dough"));
         addIngredient(c.get("Tomato Sauce"));
         addIngredient(c.get("Cheese"));
         addIngredient(c.get("Sea food"));
 
-/*
-        addIngredient(new Dough());
-        addIngredient(new TomatoSauce());
-        addIngredient(new Cheese());
-        addIngredient(new Seafood());
+        BigDecimal price = getListIngredient()
+                .stream()
+                .map(Ingredient::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        setPrice(price);
 
- */
     }
 }

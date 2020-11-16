@@ -12,6 +12,9 @@ public class ChoixPizzaHut extends ChoixPizza { ;
     public Pizza type(Pizza pizza, Map<String, Ingredient> c){
 
         pizza.addIngredient(c.get("Olive"));
+
+        pizza.setPrice(pizza.getPrice().add(c.get("Olive").getPrice()));
+
         return pizza;
     }
 }

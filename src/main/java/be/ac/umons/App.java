@@ -75,34 +75,11 @@ public class App
 
         // Regard si l'on sait calculer le prix d'une pizza
         Margherita margherita = new Margherita(ingredients);
-        System.out.println(margherita.getListIngredient());
-
-        BigDecimal result1 = margherita.getListIngredient()
-                .stream()
-                .map(Ingredient::getPrice)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
-        System.out.println("LA pizza margherita coute: " + result1);
-
-        Carbonara carbonara = new Carbonara(ingredients);
-        BigDecimal result2 = carbonara.getListIngredient()
-                .stream()
-                .map(Ingredient::getPrice)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
-        System.out.println("LA pizza carbonara coute: " + result2);
 
         FruttiDiMare fruitdemer = new FruttiDiMare(ingredients);
-        BigDecimal result3 = fruitdemer.getListIngredient()
-                .stream()
-                .map(Ingredient::getPrice)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
-        System.out.println("LA pizza futtidimare coute: " + result3);
 
         Proscuitto proscuitto = new Proscuitto(ingredients);
-        BigDecimal result4 = proscuitto.getListIngredient()
-                .stream()
-                .map(Ingredient::getPrice)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
-        System.out.println("LA pizza proscuitto coute: " + result4);
+
 
         // regarde s'il ajoute bien les olives pour les pizzahuts
         ChoixPizza myfoodd;
@@ -114,7 +91,7 @@ public class App
         ChoixPizza myfoodh;
         FabriqueAbstraite fh = new PizzaHut();
         myfoodh = fh.createPizza();
-        Margherita mypizzah = new Margherita(ingredients);
+        Carbonara mypizzah = new Carbonara(ingredients);
         System.out.println(myfoodh.type(mypizzah, ingredients));
 
 
