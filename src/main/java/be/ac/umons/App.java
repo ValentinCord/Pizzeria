@@ -5,11 +5,16 @@ import be.ac.umons.abstractFactory.Dominos;
 import be.ac.umons.abstractFactory.FabriqueAbstraite;
 import be.ac.umons.abstractFactory.PizzaHut;
 import be.ac.umons.database.DBSingleton;
+import be.ac.umons.decorationPizza.Cheesy;
+import be.ac.umons.decorationPizza.Decoration;
 import be.ac.umons.ingredients.*;
 import be.ac.umons.pizzas.Carbonara;
 import be.ac.umons.pizzas.FruttiDiMare;
 import be.ac.umons.pizzas.Margherita;
 import be.ac.umons.pizzas.Proscuitto;
+import be.ac.umons.state.Attente;
+import be.ac.umons.state.Context;
+import be.ac.umons.state.Fabrication;
 import be.ac.umons.util.AnsiColor;
 import be.ac.umons.util.ColorPrint;
 
@@ -42,9 +47,11 @@ public class App
         BigDecimal prixPizza = BigDecimal.ZERO;
         Map<String, Ingredient> ingredients = new HashMap<>();
 
+        ArrayList<Pizza> commandes = new ArrayList<>();
+
         try {
 
-            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:8889/tp6_db_java", "root", "root");
+            DBSingleton db = DBSingleton.getSingleton("jdbc:mysql://localhost:3306/tp6_db_java", "root", "");
 
             ResultSet rs = db.querySelect("SELECT * FROM ingredients");
             // Lecture ligne par ligne de la DB
@@ -94,6 +101,18 @@ public class App
         Carbonara mypizzah = new Carbonara(ingredients);
         System.out.println(myfoodh.type(mypizzah, ingredients));
 
+        // DECORATION
+        Carbonara carbtest = new Carbonara(ingredients);
+        Decoration pizza = new Cheesy(carbtest);
+        System.out.println(carbtest.getName());
+        System.out.println(carbtest.getPrice());
+
+
+        //state
+        Context context = new Context();
+        context.currentState(false,false,true);
+        context.currentState(false,false,false);
+        System.out.println("jattends");
 
     }
 

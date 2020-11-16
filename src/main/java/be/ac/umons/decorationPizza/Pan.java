@@ -5,27 +5,30 @@ import be.ac.umons.Pizza;
 import java.math.BigDecimal;
 
 public class Pan extends Decoration{
-    private String name;
-    private BigDecimal price = BigDecimal.valueOf(0);
+
+    public Pan() {
+        pizza.setName("Pan " + pizza.getName());
+        pizza.setPrice(pizza.getPrice().add(BigDecimal.valueOf(1.5)));
+    }
 
     @Override
     public String getName() {
-        return "Pan" + name;
+        return null;
     }
 
     @Override
     public BigDecimal getPrice() {
-        return price.add(BigDecimal.valueOf(2));
+        return null;
     }
 
     @Override
     public void setName(String name) {
-        this.name = name;
+
     }
 
     @Override
     public void setPrice(BigDecimal price) {
-        this.price = price;
+
     }
 
     @Override
@@ -33,8 +36,4 @@ public class Pan extends Decoration{
         return null;
     }
 
-    @Override
-    public Pizza Dedoration(Pizza pizza) {
-        return null;
-    }
 }

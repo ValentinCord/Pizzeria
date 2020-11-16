@@ -3,7 +3,7 @@ package be.ac.umons;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-public class Pizza extends Ingredient implements PizzaComponent {
+public class Pizza extends Ingredient implements PizzaComponent{
     private String name;
     private BigDecimal price = BigDecimal.valueOf(0);
     public ArrayList<Ingredient> listIngredients = new ArrayList<>();

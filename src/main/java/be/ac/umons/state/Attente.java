@@ -1,12 +1,13 @@
 package be.ac.umons.state;
 
 public class Attente implements State {
-    Boolean panne = false;
-    Boolean manque = false;
-    Boolean fabrication = false;
+
+    public Attente(){
+        System.out.println("Attente");
+    }
+
     @Override
-    public void currentState(Context context) {
-        System.out.println("Panne");
+    public void currentState(Context context, Boolean panne, Boolean manque, Boolean fabrication) {
         if (panne){
             context.setState(new Panne());
         }

@@ -1,9 +1,9 @@
 package be.ac.umons.state;
 
 public class Manque implements State {
-    private Boolean manque = false;
+
     @Override
-    public void currentState(Context context) {
+    public void currentState(Context context, Boolean panne, Boolean manque, Boolean fabrication) {
         System.out.println("Manque");
         if (manque){
             context.setState(new Attente());

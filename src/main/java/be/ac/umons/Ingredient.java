@@ -11,6 +11,8 @@ public class Ingredient implements PizzaComponent {
     public List<Observer> observers;
 
 
+
+
     public int getStock() {
         return stock;
     }

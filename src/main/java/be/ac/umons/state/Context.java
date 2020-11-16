@@ -10,4 +10,8 @@ public class Context {
         this.state = newState;
     }
 
+    public void currentState(Boolean panne, Boolean manque, Boolean fabrication){
+        state.currentState(this, panne, manque, fabrication);
+    }
+
 }
